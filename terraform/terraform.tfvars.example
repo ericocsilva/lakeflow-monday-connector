@@ -16,7 +16,7 @@ cluster_id = "0402-174914-to27joya"
 # ---------------------------------------------------------------------------
 # Repo path in the Workspace
 # ---------------------------------------------------------------------------
-repo_path = "/Repos/junior.esteca@databricks.com/lakeflow-monday-connector"
+repo_path = "/Repos/erico.silva@databricks.com/lakeflow-monday-connector"
 
 # ---------------------------------------------------------------------------
 # Unity Catalog

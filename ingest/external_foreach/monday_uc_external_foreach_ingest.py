@@ -15,7 +15,7 @@
 # COMMAND ----------
 
 import sys
-repo_root = "/Repos/junior.esteca@databricks.com/lakeflow-monday-connector"
+repo_root = "/Repos/erico.silva@databricks.com/lakeflow-monday-connector"
 if repo_root not in sys.path:
     sys.path.insert(0, repo_root)
 
