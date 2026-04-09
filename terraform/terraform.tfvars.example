@@ -1,0 +1,49 @@
+# Copy to terraform.tfvars and fill in your values.
+# Never commit terraform.tfvars — it contains sensitive credentials.
+
+# ---------------------------------------------------------------------------
+# Workspace
+# ---------------------------------------------------------------------------
+databricks_host  = "https://e2-demo-field-eng.cloud.databricks.com"
+# databricks_token is read from TF_VAR_databricks_token env var (recommended)
+# databricks_token = "dapi..."
+
+# ---------------------------------------------------------------------------
+# Compute — existing classic cluster (DBR 14.3+)
+# ---------------------------------------------------------------------------
+cluster_id = "0402-174914-to27joya"
+
+# ---------------------------------------------------------------------------
+# Repo path in the Workspace
+# ---------------------------------------------------------------------------
+repo_path = "/Repos/junior.esteca@databricks.com/lakeflow-monday-connector"
+
+# ---------------------------------------------------------------------------
+# Unity Catalog
+# ---------------------------------------------------------------------------
+catalog = "webmotors_demo_catalog"
+
+# Schema names — defaults shown, override if needed
+# managed_schema          = "monday"
+# managed_dynamic_schema  = "monday_dynamic"
+# external_schema         = "monday_external"
+# external_dynamic_schema = "monday_external_dynamic"
+
+# ---------------------------------------------------------------------------
+# External tables — storage paths (must be under a registered External Location)
+# ---------------------------------------------------------------------------
+external_location_base         = "s3://webmotors-demo-ext-s3-049629455384-9pv221/monday"
+external_dynamic_location_base = "s3://webmotors-demo-ext-s3-049629455384-9pv221/monday_dynamic"
+external_foreach_location_base = "s3://webmotors-demo-ext-s3-049629455384-9pv221/monday_foreach"
+
+# ---------------------------------------------------------------------------
+# Checkpoints (DBFS)
+# ---------------------------------------------------------------------------
+# checkpoint_base = "/dbfs/checkpoints/lakeflow"
+
+# ---------------------------------------------------------------------------
+# Schedule
+# ---------------------------------------------------------------------------
+# schedule_cron         = "0 0 * * * ?"   # hourly
+# schedule_timezone     = "America/Sao_Paulo"
+# schedule_pause_status = "PAUSED"         # change to UNPAUSED to activate

@@ -1,0 +1,10 @@
+# Runtime dependencies
+# These are available by default in Databricks Runtime 13+.
+# Install manually only if running outside DBR (e.g. local tests).
+
+requests>=2.28.0
+pydantic>=2.0.0
+
+# Provided by Databricks Runtime — do not pip-install on clusters:
+#   pyspark
+#   delta-spark
