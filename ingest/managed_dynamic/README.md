@@ -30,7 +30,7 @@ Task 1: discover_boards
 Task 2: ingest_monday_managed  (depende de Task 1)
   └─ Lê board_ids via dbutils.jobs.taskValues.get()
   └─ Injeta no pipeline_spec dinamicamente
-  └─ Ingere todas as tabelas em webmotors_demo_catalog.monday_dynamic
+  └─ Ingere todas as tabelas em classic_stable_hj897w_catalog.monday_dynamic
 ```
 
 > Novos boards criados no Monday.com são detectados e ingeridos automaticamente no próximo run, sem qualquer alteração de código ou configuração.

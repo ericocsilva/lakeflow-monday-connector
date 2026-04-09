@@ -8,8 +8,8 @@
 # MAGIC Executed once per board by the ForEach task in the job.
 # MAGIC Receives a single `board_id` via the `{{input}}` parameter.
 # MAGIC
-# MAGIC - Schema: `webmotors_demo_catalog.monday_external_foreach`
-# MAGIC - Storage: `s3://webmotors-demo-ext-s3-049629455384-9pv221/monday_foreach/`
+# MAGIC - Schema: `classic_stable_hj897w_catalog.monday_external_foreach`
+# MAGIC - Storage: `s3://classic-stable-hj897w-ext-s3-049629455384-xlik9z/monday_foreach/`
 # MAGIC - Serverless-compatible
 
 # COMMAND ----------
@@ -25,9 +25,9 @@ from pipeline.ingestion_pipeline_uc_external_direct import ingest_uc_external_di
 
 # COMMAND ----------
 
-dbutils.widgets.text("catalog",                "webmotors_demo_catalog",                                           "UC Catalog")
+dbutils.widgets.text("catalog",                "classic_stable_hj897w_catalog",                                           "UC Catalog")
 dbutils.widgets.text("schema",                 "monday_external_foreach",                                          "UC Schema")
-dbutils.widgets.text("external_location_base", "s3://webmotors-demo-ext-s3-049629455384-9pv221/monday_foreach",    "External Location Base")
+dbutils.widgets.text("external_location_base", "s3://classic-stable-hj897w-ext-s3-049629455384-xlik9z/monday_foreach",    "External Location Base")
 catalog                = dbutils.widgets.get("catalog")
 schema                 = dbutils.widgets.get("schema")
 external_location_base = dbutils.widgets.get("external_location_base")

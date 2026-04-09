@@ -26,9 +26,9 @@ from pipeline.ingestion_pipeline_uc_external import ingest_uc_external
 
 # COMMAND ----------
 
-dbutils.widgets.text("catalog",                "webmotors_demo_catalog",                                           "UC Catalog")
+dbutils.widgets.text("catalog",                "classic_stable_hj897w_catalog",                                           "UC Catalog")
 dbutils.widgets.text("schema",                 "monday_external_foreach",                                          "UC Schema")
-dbutils.widgets.text("external_location_base", "s3://webmotors-demo-ext-s3-049629455384-9pv221/monday_foreach",    "External Location Base")
+dbutils.widgets.text("external_location_base", "s3://classic-stable-hj897w-ext-s3-049629455384-xlik9z/monday_foreach",    "External Location Base")
 dbutils.widgets.text("checkpoint_base",        "/dbfs/checkpoints/lakeflow/monday_external_foreach",               "Checkpoint Base (DBFS)")
 catalog                = dbutils.widgets.get("catalog")
 schema                 = dbutils.widgets.get("schema")

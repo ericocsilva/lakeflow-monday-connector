@@ -9,8 +9,8 @@
 # MAGIC
 # MAGIC - Receives `board_ids` from the upstream `discover_boards` task via Task Values
 # MAGIC - Ingests all boards and their items as external Delta tables in Unity Catalog
-# MAGIC - Schema: `webmotors_demo_catalog.monday_external_dynamic`
-# MAGIC - Storage: `s3://webmotors-demo-ext-s3-049629455384-9pv221/monday_dynamic/`
+# MAGIC - Schema: `classic_stable_hj897w_catalog.monday_external_dynamic`
+# MAGIC - Storage: `s3://classic-stable-hj897w-ext-s3-049629455384-xlik9z/monday_dynamic/`
 
 # COMMAND ----------
 
@@ -25,9 +25,9 @@ from pipeline.ingestion_pipeline_uc_external_direct import ingest_uc_external_di
 
 # COMMAND ----------
 
-dbutils.widgets.text("catalog",                "webmotors_demo_catalog",                                           "UC Catalog")
+dbutils.widgets.text("catalog",                "classic_stable_hj897w_catalog",                                           "UC Catalog")
 dbutils.widgets.text("schema",                 "monday_external_dynamic",                                          "UC Schema")
-dbutils.widgets.text("external_location_base", "s3://webmotors-demo-ext-s3-049629455384-9pv221/monday_dynamic",    "External Location Base")
+dbutils.widgets.text("external_location_base", "s3://classic-stable-hj897w-ext-s3-049629455384-xlik9z/monday_dynamic",    "External Location Base")
 catalog                = dbutils.widgets.get("catalog")
 schema                 = dbutils.widgets.get("schema")
 external_location_base = dbutils.widgets.get("external_location_base")

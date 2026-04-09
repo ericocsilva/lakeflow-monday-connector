@@ -9,7 +9,7 @@
 # MAGIC
 # MAGIC - Receives `board_ids` from the upstream `discover_boards` task via Task Values
 # MAGIC - Ingests all boards and their items into managed Delta tables in Unity Catalog
-# MAGIC - Schema: `webmotors_demo_catalog.monday_dynamic`
+# MAGIC - Schema: `classic_stable_hj897w_catalog.monday_dynamic`
 
 # COMMAND ----------
 
@@ -24,7 +24,7 @@ from pipeline.ingestion_pipeline_direct import ingest_direct
 
 # COMMAND ----------
 
-dbutils.widgets.text("catalog", "webmotors_demo_catalog", "UC Catalog")
+dbutils.widgets.text("catalog", "classic_stable_hj897w_catalog", "UC Catalog")
 dbutils.widgets.text("schema",  "monday_dynamic",         "UC Schema")
 catalog = dbutils.widgets.get("catalog")
 schema  = dbutils.widgets.get("schema")

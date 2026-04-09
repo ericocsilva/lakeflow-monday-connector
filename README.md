@@ -127,9 +127,9 @@ Todos os notebooks aceitam parâmetros via `dbutils.widgets` — passados como `
 
 | Widget | Padrão | Aplicável a |
 |--------|--------|-------------|
-| `catalog` | `webmotors_demo_catalog` | Todos |
+| `catalog` | `classic_stable_hj897w_catalog` | Todos |
 | `schema` | Varia por variante | Todos |
-| `external_location_base` | S3 do ambiente webmotors | Somente external |
+| `external_location_base` | S3 do ambiente lakeflow | Somente external |
 | `checkpoint_base` | `/dbfs/checkpoints/lakeflow/<schema>` | Somente classic |
 
 ---

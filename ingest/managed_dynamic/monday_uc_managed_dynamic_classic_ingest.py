@@ -24,7 +24,7 @@ from pipeline.ingestion_pipeline_hms import ingest_hms
 
 # COMMAND ----------
 
-dbutils.widgets.text("catalog",         "webmotors_demo_catalog",                    "UC Catalog")
+dbutils.widgets.text("catalog",         "classic_stable_hj897w_catalog",                    "UC Catalog")
 dbutils.widgets.text("schema",          "monday_dynamic",                             "UC Schema")
 dbutils.widgets.text("checkpoint_base", "/dbfs/checkpoints/lakeflow/monday_dynamic",  "Checkpoint Base (DBFS)")
 catalog         = dbutils.widgets.get("catalog")

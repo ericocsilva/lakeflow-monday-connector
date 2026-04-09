@@ -8,7 +8,7 @@
 # MAGIC Executed once per board by the ForEach task in the job.
 # MAGIC Receives a single `board_id` via the `{{input}}` parameter.
 # MAGIC
-# MAGIC - Schema: `webmotors_demo_catalog.monday_foreach`
+# MAGIC - Schema: `classic_stable_hj897w_catalog.monday_foreach`
 # MAGIC - Serverless-compatible
 
 # COMMAND ----------
@@ -24,7 +24,7 @@ from pipeline.ingestion_pipeline_direct import ingest_direct
 
 # COMMAND ----------
 
-dbutils.widgets.text("catalog", "webmotors_demo_catalog", "UC Catalog")
+dbutils.widgets.text("catalog", "classic_stable_hj897w_catalog", "UC Catalog")
 dbutils.widgets.text("schema",  "monday_foreach",         "UC Schema")
 catalog = dbutils.widgets.get("catalog")
 schema  = dbutils.widgets.get("schema")

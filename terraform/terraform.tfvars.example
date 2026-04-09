@@ -21,7 +21,7 @@ repo_path = "/Repos/junior.esteca@databricks.com/lakeflow-monday-connector"
 # ---------------------------------------------------------------------------
 # Unity Catalog
 # ---------------------------------------------------------------------------
-catalog = "webmotors_demo_catalog"
+catalog = "classic_stable_hj897w_catalog"
 
 # Schema names — defaults shown, override if needed
 # managed_schema          = "monday"
@@ -32,9 +32,9 @@ catalog = "webmotors_demo_catalog"
 # ---------------------------------------------------------------------------
 # External tables — storage paths (must be under a registered External Location)
 # ---------------------------------------------------------------------------
-external_location_base         = "s3://webmotors-demo-ext-s3-049629455384-9pv221/monday"
-external_dynamic_location_base = "s3://webmotors-demo-ext-s3-049629455384-9pv221/monday_dynamic"
-external_foreach_location_base = "s3://webmotors-demo-ext-s3-049629455384-9pv221/monday_foreach"
+external_location_base         = "s3://classic-stable-hj897w-ext-s3-049629455384-xlik9z/monday"
+external_dynamic_location_base = "s3://classic-stable-hj897w-ext-s3-049629455384-xlik9z/monday_dynamic"
+external_foreach_location_base = "s3://classic-stable-hj897w-ext-s3-049629455384-xlik9z/monday_foreach"
 
 # ---------------------------------------------------------------------------
 # Checkpoints (DBFS)

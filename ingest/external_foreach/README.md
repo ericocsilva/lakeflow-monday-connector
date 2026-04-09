@@ -121,9 +121,9 @@ Todos os notebooks aceitam parâmetros via widgets. Para adaptar ao seu ambiente
 
 | Widget | Default | Notebooks |
 |--------|---------|-----------|
-| `catalog` | `webmotors_demo_catalog` | Todos exceto `discover_boards` |
+| `catalog` | `classic_stable_hj897w_catalog` | Todos exceto `discover_boards` |
 | `schema` | `monday_external_foreach` | Todos exceto `discover_boards` |
-| `external_location_base` | S3 do ambiente webmotors | Todos exceto `discover_boards` |
+| `external_location_base` | S3 do ambiente lakeflow | Todos exceto `discover_boards` |
 | `input` | *(vazio)* | Apenas `foreach_ingest` (injetado pelo ForEach) |
 
 ### Layout de storage gerado automaticamente

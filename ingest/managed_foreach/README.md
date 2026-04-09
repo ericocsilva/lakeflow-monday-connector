@@ -80,7 +80,7 @@ Todos os notebooks aceitam os parâmetros via widgets. Os defaults estão config
 
 | Widget | Default | Notebooks |
 |--------|---------|-----------|
-| `catalog` | `webmotors_demo_catalog` | Todos exceto `discover_boards` |
+| `catalog` | `classic_stable_hj897w_catalog` | Todos exceto `discover_boards` |
 | `schema` | `monday_foreach` | Todos exceto `discover_boards` |
 | `input` | *(vazio)* | Apenas `foreach_ingest` (injetado pelo ForEach) |
 

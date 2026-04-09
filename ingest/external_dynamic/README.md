@@ -30,7 +30,7 @@ Task 1: discover_boards
 Task 2: ingest_monday_external  (depende de Task 1)
   └─ Lê board_ids via dbutils.jobs.taskValues.get()
   └─ Injeta no pipeline_spec dinamicamente
-  └─ Ingere em webmotors_demo_catalog.monday_external_dynamic
+  └─ Ingere em classic_stable_hj897w_catalog.monday_external_dynamic
   └─ Dados armazenados em s3://bucket/monday_dynamic/<table>/
 ```
 

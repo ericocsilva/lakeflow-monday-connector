@@ -20,7 +20,7 @@ from pipeline.ingestion_pipeline_direct import ingest_direct
 
 # COMMAND ----------
 
-dbutils.widgets.text("catalog", "webmotors_demo_catalog", "UC Catalog")
+dbutils.widgets.text("catalog", "classic_stable_hj897w_catalog", "UC Catalog")
 dbutils.widgets.text("schema", "monday", "UC Schema")
 catalog = dbutils.widgets.get("catalog")
 schema  = dbutils.widgets.get("schema")
